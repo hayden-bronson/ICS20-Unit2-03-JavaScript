@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="description" content="My first webpage, with image">
+      <meta name="keywords" content="mths, website">
+      <meta name="author" content="Hayden Bronson">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Another Webpage</title>
+    <script src="file.js"></script>
+  </head>
+  <body>
+    <button id="other">Click Me</button>
+    <p id="name"></p>
+    <script>
+        alert( 'Hello, world!' );
+    //The JavaScript need to be here for this to end up working.
+    function backgroundColor() {
+    document.getElementsByTagName("BODY")[0].style.backgroundColor = "lightblue";
+    var str = "Hayden Bronson";
+    document.getElementById("name").innerHTML = str;}
+    //This event listener will listen for a click of the button placed on the screen.
+    document.getElementById("other").addEventListener("click",backgroundColor);
+    </script>
+  </body>
+</html>
